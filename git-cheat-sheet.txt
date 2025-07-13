@@ -37,3 +37,29 @@ git commit -m "Add about.txt"
 git commit -m "Fix typo in hello.txt"
 git commit -m "Remove old-notes.txt"
 git commit -m "Add logo.png in images folder"
+
+---
+
+GIT WORKFLOW STORY: The Magic Notebook
+
+1. Edit (No command)  
+   Write and change files freely — like scribbling on loose paper.
+
+2. Stage (`git add`)  
+   Put chosen changes into the "Ready to Save" folder — picking what to save.
+
+3. Commit (`git commit -m "message"`)  
+   Take a photo of the folder and write a note — save a snapshot with a message.
+
+4. Push (`git push`)  
+   Upload the album to the cloud so others can see your changes.
+
+---
+
+Shortcut to remember commands:  
+ADD → COMMIT → PUSH  (ACP)
+
+Think:  
+A = Add your changes  
+C = Commit with a message  
+P = Push to share on GitHub
