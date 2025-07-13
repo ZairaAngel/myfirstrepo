@@ -1,0 +1,39 @@
+GIT CHEAT SHEET (DevOps Beginner)
+
+Setup Git (only once)
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+Clone a GitHub repo
+git clone <repo-url>
+
+Make and track changes
+git status
+git add file.txt
+git add .          (stage everything)
+git restore --staged file.txt   (unstage)
+
+Save your changes
+git commit -m "Message here"
+
+Push to GitHub
+git push origin main
+
+Pull from GitHub
+git pull origin main
+
+View history
+git log --oneline
+git log
+
+Delete a file and commit the change
+rm file.txt
+git add file.txt
+git commit -m "Remove file.txt"
+git push origin main
+
+Good commit messages
+git commit -m "Add about.txt"
+git commit -m "Fix typo in hello.txt"
+git commit -m "Remove old-notes.txt"
+git commit -m "Add logo.png in images folder"
