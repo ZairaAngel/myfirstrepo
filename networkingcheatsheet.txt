@@ -69,3 +69,18 @@ netstat -an | findstr LISTENING
 nslookup
 tracert
 
+# IP Addresses
+
+- IP (Internet Protocol) addresses identify devices on a network.
+- IPv4 Example: 192.168.0.1 (4 numbers, 0–255)
+- IPv6 Example: 2001:0db8:85a3::8a2e:0370:7334 (longer, newer)
+
+Types:
+- Private IP: Used within a local network (e.g. 192.168.x.x)
+- Public IP: Used to communicate with the internet
+
+Check IP:
+- Public IP: curl ifconfig.me
+- Private IP:
+   • Windows: ipconfig
+   • Linux/macOS: ip a
