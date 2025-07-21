@@ -133,3 +133,19 @@ Check IP:
 - Tools to test DNS:
   • `nslookup domain.com` (Windows/Linux/macOS)
   • `dig domain.com` (Linux/macOS)
+
+
+# 🔥 Firewalls
+
+- Firewalls control which network traffic is allowed in/out.
+- Think of it as a gatekeeper for ports.
+- Commonly used in servers & cloud.
+
+# Common UFW commands (Linux):
+sudo ufw status        # Show current rules
+sudo ufw allow 22      # Allow SSH
+sudo ufw allow 80      # Allow HTTP
+sudo ufw allow 443     # Allow HTTPS
+sudo ufw deny 8080     # Deny port 8080
+sudo ufw enable        # Turn on firewall
+sudo ufw disable       # Turn off firewall
