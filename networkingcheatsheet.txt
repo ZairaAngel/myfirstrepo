@@ -1,5 +1,5 @@
 ===========================
-📡 Networking Cheat Sheet
+Networking Cheat Sheet
 ===========================
 
 ✅ Focus: Only what DevOps beginners NEED to know
@@ -69,6 +69,7 @@ netstat -an | findstr LISTENING
 nslookup
 tracert
 
+
 # IP Addresses
 
 - IP (Internet Protocol) addresses identify devices on a network.
@@ -84,3 +85,24 @@ Check IP:
 - Private IP:
    • Windows: ipconfig
    • Linux/macOS: ip a
+
+
+# Ports
+
+- A port is a number that helps your computer know *which program* should receive network traffic.
+
+- Common Ports:
+  • 22  – SSH (secure shell)
+  • 80  – HTTP (web traffic)
+  • 443 – HTTPS (secure web traffic)
+  • 3306 – MySQL database
+  • 8080 – Alternative HTTP port
+
+- Port numbers range from 0 to 65535:
+  • 0–1023 → "Well-known" ports (e.g., 80 = HTTP)
+  • 1024–49151 → Registered ports
+  • 49152–65535 → Dynamic/private ports
+
+- You can check listening ports:
+  • Windows: `netstat -an | find "LISTEN"`
+  • Linux/macOS: `ss -tuln` or `netstat -tuln`
