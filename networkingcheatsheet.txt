@@ -106,3 +106,30 @@ Check IP:
 - You can check listening ports:
   • Windows: `netstat -an | find "LISTEN"`
   • Linux/macOS: `ss -tuln` or `netstat -tuln`
+
+
+# DNS (Domain Name System)
+
+- DNS translates domain names into IP addresses.
+  • Example: google.com → 142.250.72.14
+
+- Why? It's easier for humans to remember names than IPs.
+
+- Types of DNS Records:
+  • A record – maps a domain to an IPv4 address
+  • AAAA record – maps to an IPv6 address
+  • CNAME – alias one domain to another (e.g., www → domain.com)
+  • MX – mail exchange record (email)
+  • NS – nameserver for the domain
+  • TXT – used for text info, verification, security (SPF, DKIM)
+
+- The DNS Lookup Process (Simple View):
+  1. You type `example.com` in a browser.
+  2. Your computer checks its local cache.
+  3. If not found, it asks a DNS resolver (your ISP).
+  4. The resolver queries DNS servers to find the IP.
+  5. The IP is returned → you’re connected!
+
+- Tools to test DNS:
+  • `nslookup domain.com` (Windows/Linux/macOS)
+  • `dig domain.com` (Linux/macOS)
