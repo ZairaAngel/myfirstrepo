@@ -1,0 +1,71 @@
+===========================
+📡 Networking Cheat Sheet
+===========================
+
+✅ Focus: Only what DevOps beginners NEED to know
+
+---------------------------
+1. Check IP Address
+---------------------------
+Windows:  ipconfig
+Linux:    ip a
+
+Use to see your local IP address.
+
+---------------------------
+2. Check Internet Connection
+---------------------------
+Windows:  ping google.com
+Linux:    ping google.com
+
+(Stop with Ctrl + C)
+
+---------------------------
+3. List Open/Listening Ports
+---------------------------
+Windows:  netstat -an | findstr LISTENING
+Linux:    sudo netstat -tulpn
+
+Shows which services are listening for traffic.
+
+---------------------------
+4. Test if Port is Reachable
+---------------------------
+Windows:  Test-NetConnection -ComputerName google.com -Port 80
+Linux:    nc -zv google.com 80
+
+Checks if a port is open and reachable on a server.
+
+---------------------------
+5. DNS Lookup (Domain to IP)
+---------------------------
+Windows:  nslookup google.com
+Linux:    dig google.com
+
+Checks if DNS is working.
+
+---------------------------
+6. Traceroute
+---------------------------
+Windows:  tracert google.com
+Linux:    traceroute google.com
+
+Shows path your data takes across networks.
+
+---------------------------
+7. View Active Connections
+---------------------------
+Windows:  netstat
+Linux:    ss -tuln
+
+Great for debugging ports and connections.
+
+---------------------------
+🔥 Must-Know for DevOps:
+---------------------------
+ipconfig
+ping
+netstat -an | findstr LISTENING
+nslookup
+tracert
+
