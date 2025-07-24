@@ -1,0 +1,69 @@
+ Git & GitHub – Version Control
+Used to track code changes, collaborate, and sync with GitHub.
+
+Common Git Commands:
+git init                            # Start a new Git repo
+git clone <repo-url>                # Copy a repo from GitHub
+git status                          # Check changes
+git add <file> or git add .         # Stage files
+git commit -m "message"             # Save snapshot
+git push origin main                # Upload to GitHub
+git pull origin main                # Get latest from GitHub
+
+Commit Message Tips:
+Use present tense:
+✅ Add README
+❌ Added README
+
+Be specific: Fix bug in login.js, Update styles in header.css
+
+✅ Linux Basics – Terminal + Permissions
+File System Commands:
+pwd            # Show current directory
+ls             # List files
+cd <dir>       # Change directory
+mkdir <dir>    # Make new folder
+touch <file>   # Create new file
+rm <file>      # Delete file
+mv <a> <b>     # Move or rename
+cat <file>     # Show file contents
+nano <file>    # Edit file
+
+Permissions:
+View: ls -l
+
+Change permissions:
+chmod u+x file.sh     # Add execute to user
+chmod g-w file.txt    # Remove write from group
+chmod o+r file.txt    # Add read for others
+
+Permission format: -rwxr-xr--
+u = user, g = group, o = others
+
+✅ Networking Basics
+Key Concepts:
+
+IP Address: Unique address for each device on a network
+
+Port: Channel to communicate with specific services (e.g., port 80 = HTTP)
+
+DNS: Translates domain names to IP (e.g., google.com → 142.250.72.14)
+
+Firewall: Controls traffic in/out of a system
+
+Useful Commands:
+ipconfig / ifconfig         # Show network info
+ping <website.com>          # Check connectivity
+nslookup <domain>           # Get DNS info
+netstat -an                 # Show open ports
+
+✅ Must-Know Summary
+✔ Know how to:
+
+Push & pull code using Git
+
+Use terminal for navigation and file editing
+
+Change file permissions and understand chmod
+
+Understand IPs, ports, DNS, firewalls conceptually
